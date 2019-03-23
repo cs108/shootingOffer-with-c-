@@ -66,7 +66,7 @@ void AddToTail(ListNode **head, int value)
 	newNode->value = value;
 	if (*head == nullptr)
 	{
-		*head = newNode;
+		*head = newNode;  // head=&newNode would cause problem
 	}
 	else
 	{
